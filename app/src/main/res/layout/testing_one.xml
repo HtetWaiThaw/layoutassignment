@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/IMG"
+        android:layout_width="410dp"
+        android:layout_height="350dp"
+        android:src="@drawable/image"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Datials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Datials"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/IMG"
+        app:layout_constraintRight_toLeftOf="@+id/Reviews"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:id="@+id/Reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Datials"
+        app:layout_constraintLeft_toRightOf="@+id/Datials"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Update"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@+id/Datials"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
